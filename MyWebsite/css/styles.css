@@ -1,0 +1,97 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.1); /* 10% серый */
+    color: white;
+    padding: 20px 0; /* Отступ для всего блока header */
+    text-align: center;
+    position: relative;
+}
+
+header .logo {
+    height: 60px;
+    vertical-align: middle;
+}
+
+nav {
+    padding-top: 20px; /* Увеличенный отступ сверху для навигации */
+    padding-bottom: 0px; /* Отступ снизу для навигации */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Вертикальное выравнивание по центру */
+}
+
+nav li {
+    margin: 0 1em;
+}
+
+nav a {
+    color: rgba(0, 0, 0, 0.6); /* 60% темно-серый */
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.language-switcher {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.language-button {
+    background: none;
+    border: none;
+    color: rgba(0, 0, 0, 0.6); /* 60% темно-серый */
+    font-size: 1em;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.language-button:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+main {
+    padding-top: 2em; /* Отступ сверху */
+    padding-bottom: 2em; /* Отступ снизу */
+    padding-left: 1em; /* Отступ слева */
+    padding-right: 1em; /* Отступ справа */
+    max-width: 1500px; /* Максимальная ширина основного содержимого */
+    margin: 0 auto; /* Центрирование основного содержимого */
+    text-align: center;
+}
+
+main .full-width-image {
+    width: calc(100% - 100px); /* Учитываем отступы с каждой стороны */
+    max-width: 1000px; /* Максимальная ширина */
+    max-height: 600px; /* Максимальная высота */
+    height: auto;
+    display: block;
+    margin: 100px auto; /* Отступы сверху и снизу 20px, по центру */
+    background-color: rgba(0, 0, 0, 0); /* 10% серый фон для слияния с прозрачностью */
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.1); /* 10% серый */
+    color: rgba(0, 0, 0, 0.6); /* 60% темно-серый */
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
